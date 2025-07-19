@@ -39,14 +39,21 @@ Understand
 > - Ask clarifying questions and use examples to understand what the interviewer wants out of this problem.
 > - Choose a “happy path” test input, different than the one provided, and a few edge case inputs.
 > - Verify that you and the interviewer are aligned on the expected inputs and outputs.
-
+- Can the input be empty?  
+- Is the array sorted?  
+- Is the output order important?  
+- Is there any time or space complexity requirement?  
 
 Match
 > - See if this problem matches a problem category (e.g. Strings/Arrays) and strategies or patterns within the category
+- Array + Hashmap: Using a hashmap to store seen numbers and their indices.
 
 Plan
 > - Sketch visualizations and write pseudocode
-> - Walk through a high level implementation with an existing diagram
+> - Walk through a high-level implementation with an existing diagram
+1. Create an empty hashmap.
+2. If (target - current number) already exists in hashmap -> return indices.
+3. Else, update hashmap with the current number and its index.
 
 Implement
 > - Implement the solution (make sure to know what level of detail the interviewer wants)
