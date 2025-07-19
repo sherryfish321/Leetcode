@@ -1,7 +1,7 @@
-Two Sum  
-🔗 Link: Two Sum  
-💡 Difficulty: Easy  
-🛠️ Topics: Array, Hashmap  
+**1. Two Sum**  
+**Link**: Two Sum  
+**Difficulty**: Easy  
+**Topics**: Array, Hashmap  
 
 =======================================================================================
 
