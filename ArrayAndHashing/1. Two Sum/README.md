@@ -31,6 +31,7 @@ Constraints:
 - Only one valid answer exists
 =======================================================================================
 UMPIRE Method:
+
 Understand
 > - Ask clarifying questions and use examples to understand what the interviewer wants out of this problem.
 > - Choose a “happy path” test input, different than the one provided, and a few edge case inputs.
