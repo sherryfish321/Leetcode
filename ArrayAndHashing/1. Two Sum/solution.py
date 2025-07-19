@@ -6,7 +6,7 @@ class Solution:
                 if nums[i] + nums[j] == target:
                     return [i, j] 
                   
-# Implement the code by using a hash map(enumerate):
+# Implement the code by using a hash map(enumerate).
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         preMap = {}
