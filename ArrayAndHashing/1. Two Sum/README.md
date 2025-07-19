@@ -1,5 +1,5 @@
 **1. Two Sum**  
-Link: Two Sum  
+Link: [Two Sum][https://neetcode.io/problems/two-integer-sum?list=neetcode150]
 Difficulty: Easy  
 Topics: Array, Hashmap  
 
