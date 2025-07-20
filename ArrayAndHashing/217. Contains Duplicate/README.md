@@ -1,7 +1,7 @@
 **217. Contains Duplicate**  
 Link: [Contains Duplicate](https://neetcode.io/problems/duplicate-integer?list=neetcode150)  
 Difficulty: Easy  
-Topics: Array, Hashmap  
+Topics: Array, HashSet, Sort
 
 =======================================================================================
 
