@@ -34,7 +34,7 @@ Understand
 Match
 > - See if this problem matches a problem category (e.g. Strings/Arrays) and strategies or patterns within the category
 - Sort: Sort the array and check if the next number is equal to the previous number, then return True. Otherwise, run through the array and return False.
-- HashSet: Store each number in a set. If the number is already in the hashmap, then return True. Otherwise, run through the array and return False.
+- HashSet: Store each number in a set. If the number is already in the set, then return True. Otherwise, run through the array and return False.
 
 Plan
 > - Sketch visualizations and write pseudocode
