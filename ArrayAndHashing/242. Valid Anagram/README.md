@@ -1,23 +1,27 @@
 **242. Valid Anagram**  
 Link: [Valid Anagram](https://neetcode.io/problems/is-anagram?list=neetcode150)  
 Difficulty: Easy  
-Topics: Array, Hashmap  
+Topics: HashTable, String  
 
 =======================================================================================
 
-Given an integer array nums, return true if any value appears more than once in the array, otherwise return false.
+Given two strings s and t, return true if the two strings are anagrams of each other, otherwise return false.
+
+An anagram is a string that contains the exact same characters as another string, but the order of the characters can be different.
 
 Example 1:
 
-Input: nums = [1, 2, 3, 3]
+Input: s = "racecar", t = "carrace"
 
 Output: true
-
 Example 2:
 
-Input: nums = [1, 2, 3, 4]
+Input: s = "jar", t = "jam"
 
 Output: false
+Constraints:
+
+s and t consist of lowercase English letters.
 
 =======================================================================================
 
@@ -28,22 +32,20 @@ Understand
 > - Choose a “happy path” test input, different than the one provided, and a few edge case inputs.
 > - Verify that you and the interviewer are aligned on the expected inputs and outputs.
 - Can the input array be empty?  
-- Is the array sorted?  
+- Will the length of the two arrays be different?  
 - Is there any time or space complexity requirement?  
 
 Match
 > - See if this problem matches a problem category (e.g. Strings/Arrays) and strategies or patterns within the category
-- Sort: Sort the array and check if the next number is equal to the previous number, then return True. Otherwise, run through the array and return False.
-- HashSet: Store each number in a set. If the number is already in the set, then return True. Otherwise, run through the array and return False.
+- Hashtable: As we iterate through the string, we can store each character in a Hashtable. Therefore, if the character is already in the Hashtable, then its count is incremented by 1. Otherwise, we can add the character to the Hashtable and set it by 1.
 
 Plan
 > - Sketch visualizations and write pseudocode
 > - Walk through a high-level implementation with an existing diagram
-1. Create an empty set.
-2. If the current number already exists in the set -> return True. Else, store the number in a set.
-3. Reach the end of the array without a duplicate number, then return False.  
-- Mock Interview: I'll initialize an empty set. Then, as I iterate through the array, for each number, I check whether it already exists in the set. If it does, I return true immediately. Otherwise, I add it to the set.
-If I reach the end of the loop without finding any duplicates, I return false.  
+1. Create a Hashtable for s & t respectively.
+2. Iterate through the string. If the character is already in the Hashtable, count += 1. Else, add the character to the Hashtable and its count = 1.
+3. Compare two Hashtable.
+- Mock Interview: 
 
 Implement
 > - Implement the solution (make sure to know what level of detail the interviewer wants)
@@ -57,5 +59,5 @@ Evaluate
 > - Discuss any pros and cons of the solution
 
 
-Time Complexity: O(N)
-Space Complexity: O(N)
+Time Complexity: O(n + m)
+Space Complexity: O(1)
