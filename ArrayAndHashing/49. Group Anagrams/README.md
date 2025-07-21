@@ -49,18 +49,21 @@ Match
 Plan
 > - Sketch visualizations and write pseudocode
 > - Walk through a high-level implementation with an existing diagram
-- First Idea:
-1. Create a map
-2. Iterate through the string. If the sorted string is already a key in the map, then append the string to the corresponding list. Else, create a new key-value pair.
-3. Return the values as a list
-- Improve my first idea: Iterate each string and use a hashtable to store different anagram groups, and use the character frequency as the key of each group.
-1. Create a map
-2. Initialize an array of size 26 to count the frequency of each character.
-3. Convert the list to a tuple, and use it as the key of the dictionary, then appen the string to the corresponding list.
-4. Return the values as a list
+- First idea (sorting-based):
+1. Initialize a dictionary (hash table) to group words.
+2. For each string in the input:
+　　- Sort the characters in the string.
+　　- Use the sorted string (or a tuple of chars) as the dictionary key.
+　　- Append the original string to the list at that key.
+3. Return all values in the dictionary as the grouped anagrams.
 
-Implement
-> - Implement the solution (make sure to know what level of detail the interviewer wants)
+- Improved idea (counting-based):
+1. Initialize a dictionary (hash table).
+2. For each string:
+　　- Create a fixed-length array (size 26) to count character frequencies.
+　　- Convert that array to a tuple (to make it hashable).
+　　- Use the tuple as the dictionary key, and append the original string to the corresponding list.
+3. Return all values of the dictionary.
 
 Review
 > - Re-check that your algorithm solves the problem by running through important examples
