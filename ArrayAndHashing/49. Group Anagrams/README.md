@@ -52,18 +52,18 @@ Plan
 - First idea (sorting-based):
 1. Initialize a dictionary (hash table) to group words.
 2. For each string in the input:
-　　- Sort the characters in the string.
-　　- Use the sorted string (or a tuple of chars) as the dictionary key.
-　　- Append the original string to the list at that key.
-3. Return all values in the dictionary as the grouped anagrams.
+   - Sort the characters in the string.
+   - Use the sorted string (or a tuple of chars) as the dictionary key.
+   - Append the original string to the list at that key.
+4. Return all values in the dictionary as the grouped anagrams.
 
 - Improved idea (counting-based):
 1. Initialize a dictionary (hash table).
 2. For each string:
-　　- Create a fixed-length array (size 26) to count character frequencies.
-　　- Convert that array to a tuple (to make it hashable).
-　　- Use the tuple as the dictionary key, and append the original string to the corresponding list.
-3. Return all values of the dictionary.
+   - Create a fixed-length array (size 26) to count character frequencies.
+   - Convert that array to a tuple (to make it hashable).
+   - Use the tuple as the dictionary key, and append the original string to the corresponding list.
+4. Return all values of the dictionary.
 
 Review
 > - Re-check that your algorithm solves the problem by running through important examples
