@@ -45,7 +45,6 @@ Plan
 1. Create a Hashtable for s & t respectively.
 2. Iterate through the string. If the character is already in the Hashtable, count += 1. Else, add the character to the Hashtable and its count = 1.
 3. Compare two Hashtable.
-- Mock Interview: 
 
 Implement
 > - Implement the solution (make sure to know what level of detail the interviewer wants)
