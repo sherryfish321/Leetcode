@@ -45,11 +45,11 @@ Plan
 > - Sketch visualizations and write pseudocode
 > - Walk through a high-level implementation with an existing diagram
 - First idea:
-1. Encoding function:
+- Encoding function:
   1. Create a single string
   2. For each string in the list, replace each string with {length}*{string}
   3. Joined all encoded elements together and returned them as a single string
-2. Decoding function:
+- Decoding function:
   1. Create a list and initialize a pointer i = 0
   2. Move another pointer j forward until it finds the "*"
   3. The length of each word is slicing the substring from i to j, and converting it to an integer
