@@ -43,6 +43,7 @@ Match
 > - See if this problem matches a problem category (e.g. Strings/Arrays) and strategies or patterns within the category
 - Hash Map: Create a hash map to count the frequency of each number, and sort the elements based on their frequency. Return the top k elements from the sorted list. However, this approach has a time complexity O(n log n) due to the sorting step.
 - Bucket Sort: Use a hash map to count the frequency of each element. Create an array of buckets, where each bucket corresponds to a specific frequency count. Next, place each number into the bucket based on their frequency. Iterate through the buckets in reverse order, collecting elements until k elements have been gathered. This method is more efficient since it has better time and space complexity.
+[bucket sort](https://hackmd.io/@meyr543/H1xfQewz5?stext=297%3A85%3A0%3A1753171178%3AYAwaCa)
 
 Plan
 > - Sketch visualizations and write pseudocode
