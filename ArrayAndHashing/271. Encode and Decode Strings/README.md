@@ -67,6 +67,7 @@ Evaluate
 Time Complexity: 
 - encode: O(m), where m is the total number of characters in the input list
 - decode: O(m), since each character is scanned once  
+
 Space Complexity:
 - encode: O(1) auxiliary space, O(m) output
 - decode: O(n + m), where n is the number of strings, m is total character count
