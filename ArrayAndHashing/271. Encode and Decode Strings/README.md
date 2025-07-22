@@ -43,8 +43,7 @@ Match
   
 Plan
 > - Sketch visualizations and write pseudocode
-> - Walk through a high-level implementation with an existing diagram
-- First idea:
+> - Walk through a high-level implementation with an existing diagra
 - Encoding function:
   1. Create a single string
   2. For each string in the list, replace each string with {length}*{string}
@@ -67,7 +66,7 @@ Evaluate
 
 Time Complexity: 
 - encode: O(m), where m is the total number of characters in the input list
-- decode: O(m), since each character is scanned once
+- decode: O(m), since each character is scanned once  
 Space Complexity:
 - encode: O(1) auxiliary space, O(m) output
 - decode: O(n + m), where n is the number of strings, m is total character count
