@@ -17,7 +17,7 @@ Note: A board does not need to be full or be solvable to be valid.
 Example 1:
 
 ![image](https://github.com/sherryfish321/Leetcode/blob/90f743d085b2cb2549b0ff098df5cfe52fb8541c/ArrayAndHashing/36.%20Valid%20Sudoku/sudoku.png)  
-Input: board = 
+Input: board =   
 [["1","2",".",".","3",".",".",".","."],  
  ["4",".",".","5",".",".",".",".","."],  
  [".","9","8",".",".",".",".",".","3"],  
@@ -31,7 +31,7 @@ Input: board =
 Output: true
 Example 2:
 
-Input: board = 
+Input: board =   
 [["1","2",".",".","3",".",".",".","."],  
  ["4",".",".","5",".",".",".",".","."],  
  [".","9","1",".",".",".",".",".","3"],  
