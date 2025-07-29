@@ -1,7 +1,7 @@
 **36. Valid Sudoku**  
 Link: [Valid Sudoku](https://neetcode.io/problems/valid-sudoku?list=neetcode150)  
 Difficulty: Medium  
-Topics: 
+Topics: Hashset, Array
 
 =======================================================================================
 
@@ -59,23 +59,23 @@ Understand
 > - Ask clarifying questions and use examples to understand what the interviewer wants out of this problem.
 > - Choose a “happy path” test input, different than the one provided, and a few edge case inputs.
 > - Verify that you and the interviewer are aligned on the expected inputs and outputs.
-- Can the input array be empty?
 - Is there any time or space complexity requirement?
-- If different numbers have the same frequency, and count is bigger than k. What should I return in this situation.
-
+- If inputs only contain ".", what should I return? False?
+  
 Match
 > - See if this problem matches a problem category (e.g. Strings/Arrays) and strategies or patterns within the category
-- 
+- Hashset: When iterating through the array, we can store each number in a set. If the number is already in the hashset, then return false. Otherwise, add the number to the set. Then reach the end of the array and return true
 
 Plan
 > - Sketch visualizations and write pseudocode
 > - Walk through a high-level implementation with an existing diagram
 - First idea:
-1.
-
-
-- Improved idea:
-1. 
+1. Create three hashsets(viz defaultdict()) to track seen numbers for each row, each column, and each 3*3 box.
+2. Travse the board by using two nested loops.
+3. For each number:  
+   - If the number is already in the set, then return false
+   - Otherwise, add it to the respective set.
+4. Reach the end of the array, and return true.
 
 Review
 > - Re-check that your algorithm solves the problem by running through important examples
@@ -86,5 +86,6 @@ Evaluate
 > - Discuss any pros and cons of the solution
 
 
-Time Complexity: O(n)
-Space Complexity: O(n)
+Time Complexity: O(1), always fixed 81 numbers in a 9 X 9 board.
+Space Complexity: O(1), fixed-size problem.
+
