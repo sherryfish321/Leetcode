@@ -37,16 +37,24 @@ Understand
 > - Choose a “happy path” test input, different than the one provided, and a few edge case inputs.
 > - Verify that you and the interviewer are aligned on the expected inputs and outputs.
 - Is there any time or space complexity requirement?
-- If inputs only contain ".", what should I return? False?
+- What should I return for an empty array? 0
+- What should I return if the array has no sequence? 0
+- If there are duplicates in the sequence, what should I return?
+- Can the input array be empty? Yes
   
 Match
 > - See if this problem matches a problem category (e.g. Strings/Arrays) and strategies or patterns within the category
-- Hashset: When iterating through the array, we can store each number in a set. If the number is already in the hashset, then return false. Otherwise, add the number to the set. Then reach the end of the array and return true
+- Hashset: It is a set-based lookup problem, related to hashing and prefix sequence building.
 
 Plan
 > - Sketch visualizations and write pseudocode
 > - Walk through a high-level implementation with an existing diagram
 - First idea:
+  1. Convert the array to a set for lookup
+  2. Iterate through each number, check if it is the start of the sequence
+  3. If it is, use a while loop to count how far the sequence extends
+  4. Track and update the maxmium of the sequence's length
+  5. Return the longest length found
 
 
 Review
@@ -58,7 +66,7 @@ Evaluate
 > - Discuss any pros and cons of the solution
 
 
-Time Complexity: O(n)
-Space Complexity: O(n)
+Time Complexity: O(n), since each number is inserted into the set once
+Space Complexity: O(n), since the set stores up to n distinct elements
 
 
