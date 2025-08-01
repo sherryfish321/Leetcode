@@ -25,7 +25,8 @@ class Solution:
         return true
     
     def alphaNum(self, c)
-        return (ord("A") <= ord(c) <= ord("Z") or #Uppercase letters
+        #Uppercase letters
+        return (ord("A") <= ord(c) <= ord("Z") or 
                 ord("a") <= ord(c) <= ord("z") or #Lowercase letters
                 ord("0") <= ord(c) <= ord("9")) # digits
       #ore(): converts an integer Unicode code point to its corresponding character
