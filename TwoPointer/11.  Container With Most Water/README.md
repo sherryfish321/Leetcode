@@ -1,7 +1,7 @@
 **11. Container With Most Water**  
 Link: [Container With Most Water](https://neetcode.io/problems/max-water-container?list=neetcode150)  
 Difficulty: Medium
-Topics: TwoPointers, Sort
+Topics: TwoPointers
 
 =======================================================================================
 You are given an integer array heights where heights[i] represents the height of the ith bar.
@@ -29,20 +29,25 @@ Understand
 > - Ask clarifying questions and use examples to understand what the interviewer wants out of this problem.
 > - Choose a “happy path” test input, different than the one provided, and a few edge case inputs.
 > - Verify that you and the interviewer are aligned on the expected inputs and outputs.
-- Is there any time or space complexity requirement? Your solution must use O(1) additional space.
-- Can the input array be empty?
-- What should I output if there is no triplet? Ans. In Example 2, if there is no answer, we should return Output: []
-- Do you know if the output array is sorted?
+- Is there any time or space complexity requirement? 
+- Can the input array be empty? No, there is exactly one solution.
   
 Match
 > - See if this problem matches a problem category (e.g. Strings/Arrays) and strategies or patterns within the category
-- Sort and Two Pointers: Sort enables skipping duplicates and allows efficient pointers swifting from both ends
+- Two Pointers: We can use two pointers from both ends, and move the pointer to the shorter line
   
 Plan
 > - Sketch visualizations and write pseudocode
 > - Walk through a high-level implementation with an existing diagram
 - First idea:
-  1.
+  1. Initialize two pointers from both ends
+  2. While l < r
+     - Calculate the width: r - l
+     - Calculate the height: min(heights[r], heights[l])
+     - Calculate the area: width * height
+     - Update the maximum area
+     - Move the pointer to the shorter line
+  3. After finishing, return the max_area
   
 Review
 > - Re-check that your algorithm solves the problem by running through important examples
@@ -54,5 +59,5 @@ Evaluate
 
 
 Time Complexity: O(n)
-Space Complexity: O(1)
+Space Complexity: O(1), since no extra space used
 
