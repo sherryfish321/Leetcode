@@ -9,20 +9,15 @@ You are given an integer array heights where heights[i] represents the height of
 You may choose any two bars to form a container. Return the maximum amount of water a container can store.
 
 Example 1:
-![iimage]()
-
-
-
+![iimage](TwoPointer/11.  Container With Most Water/Example.png)
 Input: height = [1,7,2,5,4,7,3,6]
-
 Output: 36
+
 Example 2:
-
 Input: height = [2,2,2]
-
 Output: 4
-Constraints:
 
+Constraints:
 2 <= height.length <= 1000
 0 <= height[i] <= 1000
 
@@ -47,16 +42,8 @@ Plan
 > - Sketch visualizations and write pseudocode
 > - Walk through a high-level implementation with an existing diagram
 - First idea:
-  1. Sort the input array
-  2. Create a result list
-  3. Loop through the list and check if the num[i] is a duplicate, then skip the duplicates
-  4. Initialize two pointers, the left pointer at the start of i+1, and the right pointer at the end of the array
-  5. Check if the sum of the numbers pointed by the two pointers is equal to 0
-     - If the total is equal to 0, append the triplet to the res list. Skip if nums[l] == nums[l + 1] and increment l by 1, or skip if nums[r] == nums[r - 1] and decrement by 1.
-     - If the total is bigger than 0, decrement the right pointer by 1.
-     - If the total is smaller than 0, increment the left pointer by 1. 
-  6. After finishing, return the res list.
-
+  1.
+  
 Review
 > - Re-check that your algorithm solves the problem by running through important examples
 > - Go through it as if you are debugging it, assuming there is a bug
@@ -66,6 +53,6 @@ Evaluate
 > - Discuss any pros and cons of the solution
 
 
-Time Complexity: O(n^2)
-Space Complexity: O(n)
+Time Complexity: O(n)
+Space Complexity: O(1)
 
