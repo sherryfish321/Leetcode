@@ -1,7 +1,7 @@
 **20. Valid Parentheses**  
 Link: [Valid Parentheses](https://neetcode.io/problems/validate-parentheses?list=neetcode150)  
-Difficulty: Easy
-Topics: 
+Difficulty: Easy  
+Topics: Stack
 
 =======================================================================================
 
@@ -44,17 +44,24 @@ Understand
 > - Choose a “happy path” test input, different than the one provided, and a few edge case inputs.
 > - Verify that you and the interviewer are aligned on the expected inputs and outputs.
 - Is there any time or space complexity requirement? 
-- Can the input array be empty or only one element? Yes, return 0
+- Can the input array be empty?
   
 Match
 > - See if this problem matches a problem category (e.g. Strings/Arrays) and strategies or patterns within the category
-- Two Pointers: We can use two pointers and track the left_max and right_max in one pass
+- Stack: We can push opening brackets into the stack and pop only if matching closing brackets appear
 
 Plan
 > - Sketch visualizations and write pseudocode
 > - Walk through a high-level implementation with an existing diagram
 - First idea:
-  1. 
+  1. Create an empty stack
+  2. Traverse each character in the string
+     - If it is an opening bracket, push it to the stack
+     - If it is a closing bracket:
+       - Check if the stack is empty, return False
+       - If the top of the stock matches the opening bracket -> Yes, pop -> No, return False
+  3. After traversing, if the stack is mapped -> all matched -> return True
+  4. Else, return False
   
 Review
 > - Re-check that your algorithm solves the problem by running through important examples
