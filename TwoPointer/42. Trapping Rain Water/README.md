@@ -10,7 +10,7 @@ You are given an array of non-negative integers height which represent an elevat
 Return the maximum area of water that can be trapped between the bars.
 
 Example 1:
-![image](TwoPointer/42. Trapping Rain Water/Example.png)
+![image](https://github.com/sherryfish321/Leetcode/blob/c8c77bf22d109bde2d6eb9ee199fd99bb840abd7/TwoPointer/42.%20Trapping%20Rain%20Water/Example.png)  
 
 Input: height = [0,2,0,3,1,0,1,3,2,1]
 
