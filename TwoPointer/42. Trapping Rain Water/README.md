@@ -1,25 +1,24 @@
-**11. Container With Most Water**  
-Link: [Container With Most Water](https://neetcode.io/problems/max-water-container?list=neetcode150)  
-Difficulty: Medium
-Topics: TwoPointers
+**42. Trapping Rain Water**  
+Link: [Trapping Rain Water](https://neetcode.io/problems/trapping-rain-water?list=neetcode150)  
+Difficulty: Hard
+Topics: TwoPointers, Array
 
 =======================================================================================
-You are given an integer array heights where heights[i] represents the height of the ith bar.
+You are given an array of non-negative integers height which represent an elevation map. Each value height[i] represents the height of a bar, which has a width of 1.
 
-You may choose any two bars to form a container. Return the maximum amount of water a container can store.
+Return the maximum area of water that can be trapped between the bars.
 
 Example 1:
-![iimage](TwoPointer/11.  Container With Most Water/Example.png)
-Input: height = [1,7,2,5,4,7,3,6]
-Output: 36
+![image]()
 
-Example 2:
-Input: height = [2,2,2]
-Output: 4
+Input: height = [0,2,0,3,1,0,1,3,2,1]
 
+Output: 9
 Constraints:
-2 <= height.length <= 1000
+
+1 <= height.length <= 1000
 0 <= height[i] <= 1000
+
 
 =======================================================================================
 
@@ -40,14 +39,7 @@ Plan
 > - Sketch visualizations and write pseudocode
 > - Walk through a high-level implementation with an existing diagram
 - First idea:
-  1. Initialize two pointers from both ends
-  2. While l < r
-     - Calculate the width: r - l
-     - Calculate the height: min(heights[r], heights[l])
-     - Calculate the area: width * height
-     - Update the maximum area
-     - Move the pointer to the shorter line
-  3. After finishing, return the max_area
+  1. I
   
 Review
 > - Re-check that your algorithm solves the problem by running through important examples
