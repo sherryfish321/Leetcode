@@ -9,7 +9,7 @@ You are given an integer array heights where heights[i] represents the height of
 You may choose any two bars to form a container. Return the maximum amount of water a container can store.
 
 Example 1:
-![iimage](TwoPointer/11.  Container With Most Water/Example.png)  
+![iimage](https://github.com/sherryfish321/Leetcode/blob/28f1c8904c1f7eda87848c8599f5db4add888b92/TwoPointer/11.%20%20Container%20With%20Most%20Water/Example.png)  
 Input: height = [1,7,2,5,4,7,3,6]
 Output: 36
 
