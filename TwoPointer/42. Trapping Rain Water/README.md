@@ -49,6 +49,9 @@ Plan
   4. Repeat the same logic for the right side
   5. Accumulate total and trapped water and return the value
   
+Implement
+> - Implement the solution (make sure to know what level of detail the interviewer wants)
+
 Review
 > - Re-check that your algorithm solves the problem by running through important examples
 > - Go through it as if you are debugging it, assuming there is a bug
