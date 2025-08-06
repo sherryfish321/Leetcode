@@ -1,7 +1,7 @@
 **150. Evaluate Reverse Polish Notation**  
 Link: [Evaluate Reverse Polish Notation](https://neetcode.io/problems/evaluate-reverse-polish-notation?list=neetcode150)  
 Difficulty: Medium  
-Topics: Stack
+Topics: Stack, Array
 
 =======================================================================================
 
@@ -32,17 +32,24 @@ Understand
 > - Ask clarifying questions and use examples to understand what the interviewer wants out of this problem.
 > - Choose a “happy path” test input, different than the one provided, and a few edge case inputs.
 > - Verify that you and the interviewer are aligned on the expected inputs and outputs.
-- Is there any time or space complexity requirement? 
+- Is there any time or space complexity requirement?
+- Can we assume the stack will always have two elements when we encounter an operator?
+  Ans. Yes, valid RPN means every operator follows exactly two operands.
+- Are all operands integers?
   
 Match
 > - See if this problem matches a problem category (e.g. Strings/Arrays) and strategies or patterns within the category
-- Stack: 
+- Stack: This is a stack-based problem. We can push numbers onto the stack. When we encounter an operator, pop two numbers, compute, and push the result back.
   
 Plan
 > - Sketch visualizations and write pseudocode
 > - Walk through a high-level implementation with an existing diagram
 - First idea:
-  1. 
+  1. Create an empty stack
+  2. Traverse each token in tokens
+     - If it is a number -> convert to int -> push onto the stack
+     - If it is an operator -> pop two numbers and apply the operator -> push the result back
+  3. At the end, the only element left in the stack is the answer
   
 Review
 > - Re-check that your algorithm solves the problem by running through important examples
