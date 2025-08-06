@@ -63,6 +63,9 @@ Plan
   3. After traversing, if the stack is mapped -> all matched -> return True
   4. Else, return False
   
+Implement
+> - Implement the solution (make sure to know what level of detail the interviewer wants)
+
 Review
 > - Re-check that your algorithm solves the problem by running through important examples
 > - Go through it as if you are debugging it, assuming there is a bug
