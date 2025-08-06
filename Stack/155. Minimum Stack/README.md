@@ -62,6 +62,9 @@ Plan
   5. On top(), return stack[-1]
   6. On getMin(), return minstack[-1] 
   
+Implement
+> - Implement the solution (make sure to know what level of detail the interviewer wants)
+
 Review
 > - Re-check that your algorithm solves the problem by running through important examples
 > - Go through it as if you are debugging it, assuming there is a bug
