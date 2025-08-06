@@ -56,6 +56,8 @@ Plan
   4. Track and update the maxmium of the sequence's length
   5. Return the longest length found
 
+Implement
+> - Implement the solution (make sure to know what level of detail the interviewer wants)
 
 Review
 > - Re-check that your algorithm solves the problem by running through important examples
