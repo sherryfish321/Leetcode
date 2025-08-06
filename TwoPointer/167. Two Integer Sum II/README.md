@@ -53,6 +53,9 @@ Plan
      - If the sum is smaller than the target, increment the left pointer by 1.
      - Else, decrement the right pointer by 1.
 
+Implement
+> - Implement the solution (make sure to know what level of detail the interviewer wants)
+
 Review
 > - Re-check that your algorithm solves the problem by running through important examples
 > - Go through it as if you are debugging it, assuming there is a bug
