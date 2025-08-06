@@ -51,16 +51,19 @@ Plan
 > - Walk through a high-level implementation with an existing diagram
 - First idea(This method uses extra memory O(n)):
   1. Create a new empty string
-  2. Loop through each character in the string, if it is alphanumeric, append its lowercase form to the empty string.
-  3. Compare the new string with it reverses, and return the result
+  2. Loop through each character in the string. If it is alphanumeric, append its lowercase form to the empty string.
+  3. Compare the new string with its reverse, and return the result
 
 - Implementation:
-  1. Create two pointers left and right at the start and the end of the string
+  1. Create two pointers, left and right, at the start and the end of the string
   2. While l < r:
     1. move l forward if s[l] is not alphanumeric, or move r backward if s[r] is not alphanumeric
     2. Compare s[l] and s[r] in lower case
     3. If it does not match, return false. Else, move both pointers inward
-  3. If all mathces, return true 
+  3. If all matches, return true 
+
+Implement
+> - Implement the solution (make sure to know what level of detail the interviewer wants)
 
 Review
 > - Re-check that your algorithm solves the problem by running through important examples
