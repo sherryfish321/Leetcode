@@ -53,7 +53,10 @@ Plan
 4. Second Pass(suffix):
    - Travel from right to left
    - At each index i, store the product of all elements to the right of i
-   - Use a variable suffix to track the cumulative product  
+   - Use a variable suffix to track the cumulative product
+     
+Implement
+> - Implement the solution (make sure to know what level of detail the interviewer wants)
 
 Review
 > - Re-check that your algorithm solves the problem by running through important examples
