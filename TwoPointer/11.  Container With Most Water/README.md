@@ -49,6 +49,9 @@ Plan
      - Move the pointer to the shorter line
   3. After finishing, return the max_area
   
+Implement
+> - Implement the solution (make sure to know what level of detail the interviewer wants)
+
 Review
 > - Re-check that your algorithm solves the problem by running through important examples
 > - Go through it as if you are debugging it, assuming there is a bug
