@@ -51,6 +51,9 @@ Plan
      - If it is an operator -> pop two numbers and apply the operator -> push the result back
   3. At the end, the only element left in the stack is the answer
   
+Implement
+> - Implement the solution (make sure to know what level of detail the interviewer wants)
+
 Review
 > - Re-check that your algorithm solves the problem by running through important examples
 > - Go through it as if you are debugging it, assuming there is a bug
