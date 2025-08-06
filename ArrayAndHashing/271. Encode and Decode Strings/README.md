@@ -55,6 +55,9 @@ Plan
   4. Append the slicing string(from j + 1 to j + 1 + length) to the list
   5. Move pointer i to the next segment and construct the original input list
 
+Implement
+> - Implement the solution (make sure to know what level of detail the interviewer wants)
+
 Review
 > - Re-check that your algorithm solves the problem by running through important examples
 > - Go through it as if you are debugging it, assuming there is a bug
