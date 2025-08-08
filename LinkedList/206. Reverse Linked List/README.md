@@ -51,7 +51,12 @@ Plan
   5. Return prev at the end  
      
 - Second idea(Recursion):
-   
+  1. Base case: If the list is empty or has one node, return that node.
+  2. Recursively call reverseList on the rest of the list.
+  3. After reversing the rest, make head.next.next = head to reverse the link.
+  4. Set head.next = None to break the original forward link.
+  5. Return the new head (which comes from the deepest recursive call).  
+  
 Implement
 > - Implement the solution (make sure to know what level of detail the interviewer wants)
 
