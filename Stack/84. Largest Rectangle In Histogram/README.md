@@ -35,24 +35,28 @@ Understand
 > - Choose a “happy path” test input, different than the one provided, and a few edge case inputs.
 > - Verify that you and the interviewer are aligned on the expected inputs and outputs.
 - Is there any time or space complexity requirement?
+- Can there be zero-height bars?
     
 Match
 > - See if this problem matches a problem category (e.g. Strings/Arrays) and strategies or patterns within the category
-- Sort the cars by positioning in descending order
-- Use a stack to keep track of the fleets by storing the time each car needs to reach the target
-- If a car reaches later than the car before it, then it forms a new fleet
+- A monotonic increasing stack is used to track bar indices.
+- When the current bar is less than the top of the stack, we start calculating areas.
   
 Plan
 > - Sketch visualizations and write pseudocode
 > - Walk through a high-level implementation with an existing diagram
 - First idea:
-  1. Pair each car's position and speed using zip().
-  2. Sort the cars based on their starting position in descending order.
-  3. Compute the time each car takes to reach the target.
-  4. Use a stack to count fleets:
-     - If the current car takes longer than the car ahead of it, it can not catch up, so it is a new fleet. -> push onto the stack
-     - If the current car takes less or equal, it joins the previous fleet. -> do not push onto the stack
-  5. Return the number of fleets using len(stack)
+  1. Add a 0 to ensure all stack items are popped at the end.
+  2. Iterate through the heights with index h
+      - While the stack is not empty and the current bar is less than the top of the stack:
+         - Pop the index from the stack
+         - Compute the width:
+           - If the stack is empty, width = h
+           - Else, width = h - stack[-1] - 1
+         - Compute area: width * height
+         - Updata the maximum area
+      - Append h to the stack
+ 3. Return maxArea
    
 Implement
 > - Implement the solution (make sure to know what level of detail the interviewer wants)
@@ -66,5 +70,5 @@ Evaluate
 > - Discuss any pros and cons of the solution
 
 
-Time Complexity: O(nlogn)
-Space Complexity: O(n)
+Time Complexity: O(n)
+Space Complexity: O(n), since the stack may hold up to n indices
