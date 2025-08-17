@@ -40,23 +40,23 @@ Understand
 > - Choose a “happy path” test input, different than the one provided, and a few edge case inputs.
 > - Verify that you and the interviewer are aligned on the expected inputs and outputs.
 - Is there any time or space complexity requirement?
-- Is the input array always in ascending order?
-- Can there be only one node?
+- Can n be equal to the list length?
     
 Match
 > - See if this problem matches a problem category (e.g. Strings/Arrays) and strategies or patterns within the category
-- We can use two pointers fast and slow to slove this problem, slow pointer moves one step and fast moves two steps forward at a time.
-- Reverse the second half.
-- Merge two lists by alternating nodes.
+- Use two pointers to locate the node before the one need to be removed.
   
 Plan
 > - Sketch visualizations and write pseudocode
 > - Walk through a high-level implementation with an existing diagram
 - First idea:
-  1. Use slow and fast pointer to find the middle of hthe list.
-  2. Iteratively reverse the list starting at second, producing the prev as the head of the reversed half list.
-  3. With first = head and second = prev, repeatedly take one node from first, then one node from second, until second is exhausted.
-     
+  1. Create a dummy node pointing to head
+  2. Set both fast and slow to dummy
+  3. Move fast ahead by n + 1 steps so there is exactly n nodes between slow and fast.
+  4. Move both fast and slow one step at a time until fast reaches the end.
+  5. slow is now just before the node to delete — adjust pointers to skip that node.
+  6. Return dummy.next as the new head.
+  
 Implement
 > - Implement the solution (make sure to know what level of detail the interviewer wants)
 
@@ -68,5 +68,5 @@ Evaluate
 > - Finish by giving space and run-time complexity
 > - Discuss any pros and cons of the solution
 
-Time Complexity: O(n), each node is visited a constant number of times.
-Space Complexity: O(1), no extra space.
+Time Complexity: O(n)
+Space Complexity: O(1)
